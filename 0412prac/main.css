@@ -1,0 +1,42 @@
+.alert-box {
+  background-color: rgb(167, 28, 155);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  display: block;
+}
+.숙제-1 {
+  background-color: black;
+  padding: 10px;
+  color: blue;
+  border-radius: 3px;
+  display: none;
+}
+.숙제-2 {
+  background-color: black;
+  padding: 10px;
+  color: blue;
+  border-radius: 3px;
+  display: none;
+}
+.list-group {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.black-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  padding: 30px;
+  display: none;
+}
+.white-bg {
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+}

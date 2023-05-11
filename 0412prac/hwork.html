@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="alert-box" id="alert">
+      <p>숙제인데 바뀜?</p>
+      <button onclick="열기닫기('none')">닫기</button>
+    </div>
+    <button onclick="열기닫기('block')">열기</button>
+
+    <button onclick="아디비번('아이디입력해라')">숙제1번버튼</button>
+    <!-- 1. 함수 인수를 따옴표로 감싸기 -->
+    <button onclick="아디비번('비번입력해라')">숙제2번버튼</button>
+    <!-- 1. 함수 인수를 따옴표로 감싸기 -->
+
+    <script>
+      function 아디비번(a) {
+        document.querySelector("#alert").innerHTML = a; // 2. 올바른 셀렉터 사용하기
+      }
+
+      function 열기닫기(a) {
+        document.querySelector("#alert").style.display = a; // 2. 올바른 셀렉터 사용하기
+      }
+    </script>
+  </body>
+</html>

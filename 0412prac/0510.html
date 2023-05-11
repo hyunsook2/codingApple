@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" , content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="연습" class="alert-box">
+      <p>알림창임</p>
+      <button id="close">닫기</button>
+    </div>
+    <button id="open">마우스만대도 열림</button>
+
+    <script>
+      document
+        .querySelectorAll("#close")[0]
+        .addEventListener("click", function () {
+          document.querySelectorAll("#연습")[0].style.display = "none";
+        });
+      document
+        .querySelectorAll("#open")[0]
+        .addEventListener("mouseover", function () {
+          document.querySelectorAll("#연습")[0].style.display = "block";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="연습" class="alert-box">알림창임</div>
+
+   <button onclick="document.getElementById('연습').style.display = 'block';">
+    열기</button>
+   <button onclick="document.getElementById('연습').style.display = 'none';">
+    닫기</button>
+
+    <button onclick="함수로열기()">함수로 여는 버튼</button>
+    <button onclick="함수로열기()">함수로 여는 버튼</button>
+    <button onclick="함수로닫기()">함수로 닫는 버튼</button>
+    <button onclick="색바꾸기()">색 버튼</button>
+    <button onclick="사이즈키우기()">사이즈업 버튼</button>
+    <button onclick="사이즈줄이기()">사이즈다운 버튼</button>
+    <button onclick="구멍내기('block')">구멍 보이기 버튼</button>
+    <button onclick="구멍내기('none')">구멍 없애기 버튼</button>
+
+   <br>
+   <br>
+    <div id="숙제1" class="숙제-1">아이디를 입력하세요</div>
+    <div id="숙제2" class="숙제-2">비밀번호를 입력하세요</div>
+   <button onclick="버튼1('block')">슥제버튼1</button>
+   <button onclick="버튼2('block')">숙제버튼2</button>
+
+   <div class="alert-box" id="alert">
+    <p id="title"> 알림창임 </p>
+    <button onclick="닫기버튼('none')">닫기</button>
+  </div>
+  
+  <button onclick="아이디알림창('아이디입력하셈','block')">버튼1</button>
+  <button onclick="아이디알림창('비번넣으셈','block')">버튼2</button>
+
+
+  
+    <script>
+        function 함수로열기(block){
+          document.getElementById('연습').style.display = 'block';
+        }
+        function 함수로닫기(){
+          document.getElementById('연습').style.display = "none";
+        }
+        function 색바꾸기(){
+          document.getElementById('연습').style.color ="yellow";
+        }
+        function 사이즈키우기(){
+          document.getElementById('연습').style.fontSize = "30px";
+        }
+        function 사이즈줄이기(){
+          document.getElementById('연습').style.fontSize = "4px";
+        }
+        function 구멍내기(구멍){
+          document.getElementById('연습').style.display = 구멍;
+        }
+        function 버튼1(구멍){
+          document.getElementById('숙제1').style.display = 구멍;
+        }
+        function 버튼2(구멍){
+          document.getElementById('숙제2').style.display = 구멍;
+        }
+        function 아이디알림창(구멍,보여주기){ 
+        document.getElementById('title').innerHTML = 구멍; 
+        document.getElementById('alert').style.display = 보여주기; 
+        }
+        function 닫기버튼(구멍){
+            document.getElementById('alert').style.display = 구멍;
+        }
+          </script>
+          
+
+
+
+          <button onclick="펑션()">버튼2</button>
+
+          <h1> 펑션()</h1>
+          <script>
+          function 펑션(구멍){
+            document.getElementById('숙제').innerHTML = 구멍;
+          }
+          </script>
+          
+
+
+
+
+    <button id="버튼">예시</button>
+    <script>
+        document.getElementById('버튼').addEventListener('click', function(){
+            console.log(this.innerHTML)
+        });
+    </script>
+
+
+
+</body>
+</html>
