@@ -33,10 +33,21 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
   padding: 30px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
 }
+
 .white-bg {
   background: white;
   border-radius: 5px;
   padding: 30px;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.main-bg {
+  padding: 100px 20px;
+  background: lightblue;
 }
